@@ -4,17 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E2CE32"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
+    <Button
+        android:id="@+id/botaoHomem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="#7C86EE"
+        android:text="0"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="660dp" />
 
+    <Button
+        android:id="@+id/botaoMulher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F5A0A0"
+        android:text="0"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="663dp" />
+
+    <TextView
+        android:id="@+id/textoPessoas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pessoas: 0"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="311dp" />
+
+    <Button
+        android:id="@+id/botaoReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="28dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
